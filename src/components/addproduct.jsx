@@ -8,15 +8,14 @@ return (
       <head>
         <style>{`
           body {
-            background-color: rgb(137, 72, 190);
-            background-image: linear-gradient(90deg, transparent 20%, rgb(171, 10, 196));
-            background-image: url('https://static.vecteezy.com/system/resources/previews/024/655/830/non_2x/abstract-yellow-flower-painted-with-messy-brush-strokes-generated-by-ai-free-photo.jpg');
+            background-color:' whitesmoke';
+           
           }
         `}</style>
       </head>
-      <body style={{ backgroundColor: 'rgb(137, 72, 190)', backgroundImage: 'linear-gradient(90deg, transparent 30%, rgb(171, 10, 196)), url("https://static.vecteezy.com/system/resources/previews/024/655/830/non_2x/abstract-yellow-flower-painted-with-messy-brush-strokes-generated-by-ai-free-photo.jpg")', backgroundSize: 'cover' }}>
+      <body style={{ backgroundColor: 'whitesmoke', backgroundImage: 'url(https://static.vecteezy.com/system/resources/previews/006/663/095/large_2x/shopping-concept-cartons-or-paper-boxes-and-shopping-bag-in-red-shopping-cart-on-pink-background-online-shopping-consumers-can-shop-from-home-and-delivery-service-with-copy-space-free-photo.jpg)', backgroundSize: 'cover',width:"1364px",height:"610px"}}>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh' }}>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '2.5%', backgroundColor: '#ffc0cbb7', justifyContent: 'space-between', borderRadius: '1pc' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '2.5%', backgroundColor: '#f5f5f5b7', justifyContent: 'space-between', borderRadius: '1pc' }}>
             <h1>Add Product</h1>
             <div style={{ display: 'flex', flexDirection: 'column', alignContent: 'center', gap: '10px', width: '250px' }}>
               <input type="text"  placeholder="Enter ProductName" style={{ borderRadius: '5px', padding: '6px', border: '1px solid black' }} />

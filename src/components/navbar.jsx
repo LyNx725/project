@@ -1,26 +1,36 @@
+import React, { useEffect, useState } from 'react';
+import './navbar.css';
 
-import React from 'react';
-import { Link } from 'react-router-dom';
+function NavBar() {
+  const [activeLink, setActiveLink] = useState('/');
 
-function NavBar(){
-    return(
-        <div style={{display:'flex',color:'gray',border:'1px solid ',justifyContent:'space-evenly',padding:'5px',alignItems:'centre',height:'50',borderRadius:'10px',backgroundImage:'url(https://images.rawpixel.com/image_social_landscape/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjU0NmJhdGNoMy1teW50LTM0LWJhZGdld2F0ZXJjb2xvcl8xLmpwZw.jpg)'}}>
-     <div style={{marginTop:'10px',borderRadius:'30px'}}>
-   
-      </div>
-     <h3>
+  const navigateTo = (path) => {
+    setActiveLink(path);
+    window.location.pathname = path;
+  };
+useEffect(()=>{
+  setActiveLink(window.location.pathname);
+});
+  return (
+    <div className="navbar">
+      <div className="logo"></div>
+      <h3 
+        className={activeLink === '/' ? 'active' : ''} 
+        onClick={() => navigateTo('/')}
+      >
         HOME
       </h3>
-    
-      <h3>
+      <h3 
+        className={activeLink === '/add-product' ? 'active' : ''} 
+        onClick={() => navigateTo('/add-product')}
+      >
         ADD PRODUCT
       </h3>
-      <div style={{marginTop:'10px'}}>
-      <button style={{backgroundColor:'pale',borderRadius:'10px',width:'60px',height:'5ch',borderColor:'whitesmoke',color:'black'}}>
-        Login
-      </button>
+      <div className="login-button-container">
+        <button className="login-button">Login</button>
       </div>
     </div>
-  )
+  );
 }
+
 export default NavBar;
