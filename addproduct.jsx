@@ -25,12 +25,11 @@ return (
               <input type="text" placeholder="Price" style={{ borderRadius: '5px', padding: '6px', border: '1px solid black' }} />
               <div>
                 <button style={{ width: '100px', height: '24px', border: '1px solid rgb(20, 2, 2)', borderRadius: '20px', backgroundColor: 'whitesmoke', backgroundImage: 'linear-gradient(90deg, transparent 30%, rgb(160, 158, 158))', fontFamily: 'Verdana, Geneva, Tahoma, sans-serif',color:'black',paddingBottom:'25px',paddingTop:'5px' }}>
-                  <span>Sign Up</span>
+                  <span>Add</span>
                 </button>
               </div>
               <div style={{ display: 'flex', alignItems: 'center' }}>
-                <h5>Already have an account?</h5>
-                <a href="http://127.0.0.1:5500/login.html">Login</a>
+                
               </div>
             </div>
           </div>
